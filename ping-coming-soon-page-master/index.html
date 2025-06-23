@@ -16,19 +16,31 @@
       <img src="images/logo.svg" alt="logo" />
     </header>
     <main>
-      <div class="ping__text-container">
-        <h2 class="ping__heading-primary">We are launching soon!</h2>
+      <section class="ping__main-container">
+        <h2 class="ping__heading-primary">
+          We are launching
+          <strong class="ping__heading-primary--span">soon!</strong>
+        </h2>
         <p class="ping__heading-secondary">Subscribe and get notified</p>
-        <div class="ping__form">
-          <input type="email" required class="ping__input" />
-          <button type="submit" class="btm ping__btn">Notify Me</button>
-        </div>
+        <form class="ping__form">
+          <input
+            id="email"
+            type="email"
+            required
+            oninput="checker()"
+            class="ping__input"
+            placeholder="Your Email Address" />
+
+          <p class="ping__form-invaild">Please provide a vaild email address</p>
+
+          <button type="submit" class="btn ping__btn">Notify Me</button>
+        </form>
+
         <div class="ping__dashboard">
           <img src="images/illustration-dashboard.png" alt="ping dashboard" />
         </div>
-      </div>
+      </section>
     </main>
-    Notify Me &copy;Copyright Ping. All rights reserved.
 
     <footer>
       <ul class="ping__footer">
@@ -69,12 +81,16 @@
           </a>
         </li>
       </ul>
+      <p class="soical__item-footer--text">
+        &copy;Copyright Ping. All rights reserved.
+      </p>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Louai Khodary</a>.
       </p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
