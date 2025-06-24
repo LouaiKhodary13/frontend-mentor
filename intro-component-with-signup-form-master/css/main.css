@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg-intro-desktop.png);
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+}
+
+.signup__primary {
+  color: #fff;
+  font-weight: 800;
+  text-align: start;
+  font-size: 2.6rem;
+  line-height: 3.4375rem;
+  letter-spacing: -0.52px;
+}
+.signup__primary__text {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.625rem;
+  letter-spacing: -0.52px;
+}
+
+.form__link:link, .form__link:visited {
+  width: 100%;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  text-decoration: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: 0px 22px 27px -7px rgba(0, 0, 0, 0.66);
+}
+.form__link--span {
+  color: #c7c1ed;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup__heading {
+  width: 50%;
+  padding: 5rem;
+}
+
+.form {
+  margin-top: 5rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.form__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.66);
+  border-radius: 0.5rem;
+}
+.form__container-input {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid #666;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
