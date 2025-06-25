@@ -76,7 +76,7 @@ main {
 .form__link--span {
   color: #c7c1ed;
 }
-.form__container {
+.form__body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +89,7 @@ main {
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
 }
-.form__container-input {
+.form__input {
   width: 100%;
   display: block;
   padding: 1rem;
@@ -97,23 +97,30 @@ main {
   border: 1px solid #666;
   border-radius: 0.5rem;
 }
-.form__container-input::placeholder {
+.form__input::placeholder {
   font-size: 1rem;
   font-weight: 600;
   color: #878789;
   text-transform: capitalize;
 }
-.form__container-input:placeholder-shown {
+.form__input:placeholder-shown {
   font-weight: bold;
   text-indent: 0.5rem;
 }
-.form__container-input:focus {
+.form__input:focus {
   border: 2px solid hsl(248, 32%, 49%);
   font-weight: bold;
   color: #000;
   text-indent: 0.5rem;
 }
-.form__container-btn {
+.form__input:invalid {
+  border: 2px solid hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+.form__input:invalid::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+.form__submit {
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -126,14 +133,33 @@ main {
   font-weight: 600;
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.4);
 }
-.form__container-terms {
+.form__group {
+  width: 100%;
+  position: relative;
+}
+.form__error {
+  display: block;
+  text-align: right;
+}
+.form__error-icon {
+  position: absolute;
+  right: 2rem;
+  top: 0.9rem;
+}
+.form__error-message {
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.form__terms {
   font-size: 0.7rem;
   color: #b9b6d3;
   font-weight: 600;
   letter-spacing: 0.7px;
   line-height: 1.5;
 }
-.form__container .terms-span {
+.form__terms-highlight {
   color: #ff7a7a;
   display: inline-block;
   font-weight: 900;

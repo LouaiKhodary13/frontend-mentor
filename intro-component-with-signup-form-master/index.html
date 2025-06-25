@@ -41,37 +41,81 @@
           <span class="form__link--span">then $20/mo. thereafter</span>
         </a>
 
-        <form action="" class="form__container">
-          <input
-            type="text"
-            name="first__name"
-            id="first__name"
-            placeholder="First Name"
-            class="form__container-input" />
-          <input
-            type="text"
-            name="last__name"
-            id="last__name"
-            placeholder="Last Name"
-            class="form__container-input" />
-          <input
-            type="email"
-            name="email_address"
-            id="email_address"
-            placeholder="Email Address"
-            class="form__container-input" />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="password"
-            class="form__container-input" />
-          <button type="submit" class="form__container-btn">
+        <form action="" class="form__body" onsubmit="printInputValue(event)">
+          <!-- First Name -->
+          <div class="form__group">
+            <input
+              required
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="First Name"
+              class="form__input" />
+            <div class="form__error-icon">
+              <img src="images/icon-error.svg" alt="error" />
+            </div>
+            <div class="form__error">
+              <p class="form__error-message">First Name cannot be empty</p>
+            </div>
+          </div>
+          <!-- Last Name -->
+          <div class="form__group">
+            <input
+              required
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Last Name"
+              class="form__input" />
+            <div class="form__error-icon">
+              <img src="images/icon-error.svg" alt="error" />
+            </div>
+            <div class="form__error">
+              <p class="form__error-message">Last Name cannot be empty</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form__group">
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              class="form__input" />
+            <div class="form__error-icon">
+              <img src="images/icon-error.svg" alt="error" />
+            </div>
+            <div class="form__error">
+              <p class="form__error-message">Looks like this is not an email</p>
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="form__group">
+            <input
+              required
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="form__input" />
+            <div class="form__error-icon">
+              <img src="images/icon-error.svg" alt="error" />
+            </div>
+            <div class="form__error">
+              <p class="form__error-message">Password cannot be empty</p>
+            </div>
+          </div>
+
+          <button type="submit" class="form__submit">
             Claim your free trial
           </button>
-          <p class="form__container-terms">
+
+          <p class="form__terms">
             By clicking the button, you are agreeing to our
-            <span class="terms-span"> Terms and Services </span>
+            <span class="form__terms-highlight">Terms and Services</span>
           </p>
         </form>
       </section>
