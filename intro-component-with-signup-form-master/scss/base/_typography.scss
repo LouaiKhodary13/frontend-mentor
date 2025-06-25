@@ -1,34 +1,17 @@
-.signup__primary {
-  color: $white;
-  font-weight: 800;
-  text-align: start;
-  font-size: 2.6rem;
-  line-height: 3.4375rem;
-  letter-spacing: -0.52px;
-  &__text {
-    font-size: 1rem;
+.signup__heading {
+  &-primary {
     color: $white;
+    font-weight: 800;
+    text-align: start;
+    font-size: 2.6rem;
+    line-height: 3.4375rem;
+    letter-spacing: -0.52px;
+  }
+  &-text {
+    font-size: 1rem;
+    color: #ffcccb;
     font-weight: 500;
     line-height: 1.625rem;
     letter-spacing: -0.52px;
-  }
-}
-
-.form__link {
-  &:link,
-  &:visited {
-    width: 100%;
-    font-weight: bold;
-    display: inline-block;
-    text-align: center;
-    background-color: $blue;
-    text-decoration: none;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    color: $white;
-    box-shadow: 0px 22px 27px -7px rgba(0, 0, 0, 0.66);
-  }
-  &--span {
-    color: #c7c1ed;
   }
 }
