@@ -1,14 +1,17 @@
-const FIRST_NAME = document.getElementById('first__name');
-const LAST_NAME = document.getElementById('last__name');
-const EMAIL_ADDRESS = document.getElementById('email_address');
-const PASSWORD = document.getElementById('password');
+const form = document.getElementById('form');
+const all_Inputs = document.querySelectorAll('.form__input');
+const form_error = document.querySelectorAll('.form__error');
 
-function printInputValue(event) {
+form.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  const value1 = FIRST_NAME.value;
-  const value2 = LAST_NAME.value;
-  const value3 = EMAIL_ADDRESS.value;
-  const value4 = PASSWORD.value;
-  console.log(value1, value2, value3, value4);
-}
+  all_Inputs.forEach((input, index) => {
+    if (input.value.trim() == '') {
+      input.classList.add('form__input-empty');
+      form_error[index].style.display = 'block';
+    } else {
+      input.classList.remove('form__input-empty');
+      form_error[index].style.display = 'none';
+    }
+  });
+});
