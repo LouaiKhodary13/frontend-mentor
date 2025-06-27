@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg-intro-desktop.png);
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+}
+
+.signup__heading-primary {
+  color: #fff;
+  font-weight: 800;
+  text-align: start;
+  font-size: 2.6rem;
+  line-height: 3.4375rem;
+  letter-spacing: -0.52px;
+}
+.signup__heading-text {
+  font-size: 1rem;
+  color: #ffcccb;
+  font-weight: 500;
+  line-height: 1.625rem;
+  letter-spacing: -0.52px;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup__heading {
+  width: 50%;
+  padding: 5rem;
+}
+
+.form {
+  margin-top: 5rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.form__link:link, .form__link:visited {
+  width: 100%;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  text-decoration: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.4);
+}
+.form__link--span {
+  color: #c7c1ed;
+}
+.form__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  width: 100%;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+}
+.form__input {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #878789;
+}
+.form__input::placeholder {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.form__input:focus {
+  font-weight: bold;
+  color: #000;
+  border: 0.1rem solid hsl(248, 32%, 49%);
+}
+.form__input-empty {
+  border: 1px solid hsl(0, 100%, 74%) !important;
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+}
+.form__input-empty::placeholder {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.form__submit {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: #c7f9e3;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.4);
+}
+.form__group {
+  width: 100%;
+  position: relative;
+}
+.form__error {
+  display: none;
+  text-align: right;
+  position: absolute;
+  right: 0.9rem;
+  padding-bottom: 2rem;
+  top: 1rem;
+}
+.form__error-heading {
+  font-size: 0.9rem;
+  color: hsl(0, 100%, 74%);
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.form__error-message {
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.form__terms {
+  font-size: 0.7rem;
+  color: #b9b6d3;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+}
+.form__terms-highlight {
+  color: #ff7a7a;
+  display: inline-block;
+  font-weight: 900;
+}
+
+@media (max-width: 780px) {
+  main {
+    flex-direction: column;
+  }
+  main .signup__heading {
+    width: 100%;
+    padding: 1rem;
+  }
+  main .signup__heading-primary {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  main .signup__heading-text {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  main .form {
+    width: 100%;
+    margin-top: 0;
+  }
+  main .form__container-terms {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
