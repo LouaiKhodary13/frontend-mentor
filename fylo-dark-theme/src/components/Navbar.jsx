@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <nav className='fylo_nav'>
       <div className='fylo_nav_logo-box'>
-        <img src='./images/logo.svg' alt='logo' />
+        <img src='/images/logo.svg' alt='logo' />
       </div>
       <ul className='fylo_nav-items'>
         <li className='fylo_nav-item'>
