@@ -1,9 +1,12 @@
+import Navbar from './components/Navbar';
 import './main.scss';
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <div className='fylo__app'>
+        <Navbar />
+      </div>
     </>
   );
 }

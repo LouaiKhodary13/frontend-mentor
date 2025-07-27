@@ -1,0 +1,11 @@
+.fylo__app {
+  padding: 4rem;
+  max-width: 144rem;
+  min-height: 100vh;
+
+  @include respond(phone) {
+    & {
+      padding: 2rem;
+    }
+  }
+}

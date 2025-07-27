@@ -1,0 +1,45 @@
+.fylo__navbar {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  &-logo {
+    max-width: 100%;
+
+    &-img {
+      display: inline-block;
+      width: 10rem;
+    }
+  }
+
+  &-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &-item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #9ba2aa;
+    font-size: 1rem;
+  }
+  &-link:visited,
+  &-link:link {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-transform: capitalize;
+  }
+  @media (max-width: 768px) {
+    &-logo-img {
+      width: 5rem;
+    }
+    &-item {
+      font-size: 0.6rem;
+    }
+  }
+}
