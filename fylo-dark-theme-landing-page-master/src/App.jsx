@@ -1,13 +1,12 @@
-import Navbar from './components/Navbar';
+import { Navbar, Hero } from './components';
 import './main.scss';
 
 function App() {
   return (
-    <>
-      <div className='fylo__app'>
-        <Navbar />
-      </div>
-    </>
+    <main className='fylo__app'>
+      <Navbar />
+      <Hero />
+    </main>
   );
 }
 
