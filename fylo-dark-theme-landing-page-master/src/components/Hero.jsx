@@ -13,7 +13,15 @@ const Hero = () => {
             accessible anywhere.
           </span>
         </h2>
+        <p className='hero__heading--secondary'>
+          Fylo stores all your most important files in one secure loation.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workres
+        </p>
       </div>
+      <button type='button' className='hero__btn'>
+        Get started
+      </button>
     </section>
   );
 };
