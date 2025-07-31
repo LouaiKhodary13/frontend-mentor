@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   &__img {
     display: block;
     max-width: 100%;
@@ -12,14 +11,12 @@
   &__heading {
     margin-top: 2rem;
     text-align: center;
-
     &--primary {
       font-size: 2rem;
       font-weight: 700;
       line-height: 1.5;
       color: white;
       display: block;
-
       @include respond(phone) {
         display: inline-block;
         font-size: 1rem;
@@ -65,5 +62,20 @@
     &:active {
       transform: translateY(2px);
     }
+      text-align: center;
+      @include respond(phone) {
+        display: inline-block;
+        font-size: 1.7rem;
+      }
+      &-span {
+        display: block;
+        text-align: center;
+        @include respond(phone) {
+          display: inline-block;
+          font-size: 1.7rem;
+        }
+      }
+    }
+
   }
 }

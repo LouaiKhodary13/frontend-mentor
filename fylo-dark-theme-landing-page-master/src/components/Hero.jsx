@@ -22,6 +22,7 @@ const Hero = () => {
       <button type='button' className='hero__btn'>
         Get started
       </button>
+      </div>
     </section>
   );
 };
