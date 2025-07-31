@@ -10,17 +10,17 @@ const Navbar = () => {
       </div>
       <ul className='fylo__navbar-items'>
         <li className='fylo__navbar-item'>
-          <a href='' className='fylo__navbar-link'>
+          <a href='#' className='fylo__navbar-link'>
             Features
           </a>
         </li>
         <li className='fylo__navbar-item'>
-          <a href='' className='fylo__navbar-link'>
+          <a href='#' className='fylo__navbar-link'>
             Team
           </a>
         </li>
         <li className='fylo__navbar-item'>
-          <a href='' className='fylo__navbar-link'>
+          <a href='#' className='fylo__navbar-link'>
             Sign In
           </a>
         </li>

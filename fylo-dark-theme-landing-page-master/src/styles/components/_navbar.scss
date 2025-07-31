@@ -1,10 +1,15 @@
 .fylo__navbar {
+  padding: 4rem;
   max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-
+  @include respond(phone) {
+    & {
+      padding: 2rem;
+    }
+  }
   &-logo {
     max-width: 100%;
     cursor: pointer;
