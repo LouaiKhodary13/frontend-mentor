@@ -62,20 +62,18 @@
     &:active {
       transform: translateY(2px);
     }
+    text-align: center;
+    @include respond(phone) {
+      display: inline-block;
+      font-size: 1.7rem;
+    }
+    &-span {
+      display: block;
       text-align: center;
       @include respond(phone) {
         display: inline-block;
         font-size: 1.7rem;
       }
-      &-span {
-        display: block;
-        text-align: center;
-        @include respond(phone) {
-          display: inline-block;
-          font-size: 1.7rem;
-        }
-      }
     }
-
   }
 }
