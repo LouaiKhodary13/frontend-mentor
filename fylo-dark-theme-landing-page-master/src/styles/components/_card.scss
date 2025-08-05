@@ -1,4 +1,77 @@
 .card {
-  height: 100vh;
-  background-color: red;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 10rem;
+  background-color: $navy-900;
+  gap: 5rem;
+  box-sizing: border-box;
+  @include respond(tab-land) {
+    padding: 2rem 1rem;
+  }
+  @include respond(tab-port) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  &__image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+
+    @include respond(phone) {
+      &-res {
+        width: 300px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: clamp(1.2rem, 1vw + 1rem, 2rem);
+    color: $white;
+    line-height: 1.6;
+    font-weight: 700;
+
+    &-highlight {
+      display: block;
+      @include respond(phone) {
+        display: inline;
+      }
+    }
+  }
+  &__description {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-weight: 200;
+    color: $white;
+    line-height: 1.5;
+  }
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    @include respond(tab-port) {
+      padding-bottom: 2rem;
+    }
+    &-link {
+      &:link,
+      &:visited {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: $teal-200;
+        text-decoration: none;
+        border-bottom: 1px solid $teal-200;
+        line-height: 1.7;
+        padding-bottom: 3px;
+      }
+    }
+  }
 }

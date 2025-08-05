@@ -1,15 +1,12 @@
 .fylo__navbar {
   padding: 4rem;
   max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  @include flex(center, space-between, row, 2rem);
+
   @include respond(phone) {
-    & {
-      padding: 2rem;
-    }
+    padding: 2rem;
   }
+
   &-logo {
     max-width: 100%;
     cursor: pointer;
@@ -17,34 +14,32 @@
     &-img {
       display: inline-block;
       width: 10rem;
+      @include respond(phone) {
+        width: 5rem;
+      }
     }
   }
 
   &-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    @include flex(center, center, row, 2rem);
   }
   &-item {
-    font-family: 'Raleway', sans-serif;
+    font-family: $font-primary-heading;
     font-weight: 400;
-    color: #9ba2aa;
-    font-size: 1rem;
+    color: $nav-item-color;
+    font-size: clamp(0.6rem, 1vw + 0.5rem, 1rem);
   }
-  &-link:visited,
-  &-link:link {
-    font-family: inherit;
-    font-weight: inherit;
-    font-size: inherit;
-    color: inherit;
-  }
-  @media (max-width: 768px) {
-    &-logo-img {
-      width: 5rem;
+  &-link {
+    &:visited,
+    &:link {
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      color: inherit;
     }
-    &-item {
-      font-size: 0.6rem;
+    &:hover {
+      text-decoration: underline;
+      color: $white;
     }
   }
 }

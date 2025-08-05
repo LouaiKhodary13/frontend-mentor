@@ -1,9 +1,8 @@
 .hero {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  min-height: 90vh;
+  @include flex(center, center, column, 0rem);
+  padding: 2rem;
+
   &__img {
     display: block;
     max-width: 100%;
@@ -11,11 +10,12 @@
   &__heading {
     margin-top: 2rem;
     text-align: center;
+
     &--primary {
       font-size: 2rem;
       font-weight: 700;
       line-height: 1.5;
-      color: white;
+      color: $white;
       display: block;
       @include respond(phone) {
         display: inline-block;
@@ -33,7 +33,7 @@
     &--secondary {
       font-size: 1rem;
       line-height: 1.5;
-      color: white;
+      color: $white;
       width: 30rem;
       margin: 2rem auto;
       @include respond(phone) {
@@ -50,22 +50,19 @@
     border-radius: 10rem;
     background-color: $cyan-500;
     cursor: pointer;
-    color: white;
+    color: $white;
     text-align: center;
-
     text-transform: capitalize;
-
     transition: all 0.2s;
     &:hover {
-      background-image: linear-gradient(to left, $cyan-500, $teal-200);
+      background-color: $btn-hover;
     }
     &:active {
       transform: translateY(2px);
     }
-    text-align: center;
     @include respond(phone) {
       display: inline-block;
-      font-size: 1.7rem;
+      font-size: 1rem;
     }
     &-span {
       display: block;
