@@ -1,0 +1,92 @@
+//  Global Restting
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//  Variables
+
+$body_bg: hsl(212, 45%, 89%);
+$card_bg: hsl(0, 0%, 100%);
+
+body {
+  background-color: $body_bg;
+  font-family: 'Outfit', sans-serif;
+  .card {
+    margin: 3.125em auto;
+    background-color: $card_bg;
+    width: 19em;
+    border-radius: 0.9375em;
+    .card-img-top {
+      width: 100%;
+      display: block;
+      padding: 0.75em 0.75em;
+      border-radius: 0.9375em;
+    }
+    .card-body {
+      margin: 0 auto;
+      font-size: 0.9375em;
+
+      h1 {
+        width: 100%;
+        padding: 0.65em 0.75em;
+        text-align: left;
+        margin-left: 0.625em;
+        font-size: 1.425em;
+        font-weight: 700;
+        color: #2e3a53;
+      }
+      .card-text {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9379em;
+        font-weight: 400;
+        width: 95%;
+        line-height: 1.5;
+        margin-left: 0.6375em;
+        font-weight: 300;
+        letter-spacing: 0.05625em;
+        color: #aeb2bc;
+      }
+      .last-word {
+        text-align: center;
+        padding-bottom: 1.75em;
+        color: #aeb2bc;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  body .card {
+    width: 15em;
+    h1 {
+      font-size: 0.9em;
+      width: 100%;
+      padding: 0.65em 0.75em;
+      text-align: center;
+      margin: 0 auto;
+
+      font-weight: 700;
+    }
+    .card-body h1 {
+      margin-left: 0;
+      padding: 5px 10px;
+
+      text-align: center;
+      font-size: 1.2em;
+      width: 100%;
+    }
+    .card-body .card-text {
+      text-align: center;
+      margin-left: 0;
+      font-size: 0.8379em;
+      padding-top: 0.25em;
+      width: 100%;
+    }
+  }
+}
