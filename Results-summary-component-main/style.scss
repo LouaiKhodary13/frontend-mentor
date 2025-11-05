@@ -1,0 +1,279 @@
+// Global Restting
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//  Varaibles
+
+$body_bg: hsl(0, 0%, 100%);
+$resule_bg: #6340fc;
+$summery_bg: #ffffff;
+$h1_color: #cbbcff;
+$tablet: 768px;
+$mobile: 425px;
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  margin: 50px 100px;
+  .content {
+    margin: 0 auto;
+    max-width: 900px;
+    //  width: 90vw;
+  }
+  .flex {
+    display: flex;
+    .left-side {
+      background-color: $resule_bg;
+      color: $body_bg;
+      width: 50%;
+      height: 600px;
+      text-align: center;
+      border-radius: 25px;
+      padding: 14px 24px;
+      .left-heading {
+        margin-top: 20px;
+        color: $h1_color;
+      }
+      .circle {
+        margin: 40px auto;
+        width: 250px;
+        height: 250px;
+        background-color: #4533eb;
+        border-radius: 100%;
+        position: relative;
+        .circle-text {
+          font-size: 90px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-block;
+        }
+        .circle-text-sub {
+          font-size: 22px;
+          position: absolute;
+          top: 78%;
+          left: 50%;
+          color: $h1_color;
+          transform: translate(-50%, -50%);
+          display: inline-block;
+        }
+      }
+
+      .scores {
+        text-align: center;
+        width: 250px;
+        margin: 0 auto;
+        h1 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .right-side {
+      background-color: $body_bg;
+      width: 50%;
+      height: 600px;
+      color: black;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 3px 0.2px 6px 0px rgba(59, 46, 46, 0.2);
+      .score-value {
+        color: #575a6d;
+        font-weight: bold;
+      }
+      h1 {
+        width: 100%;
+        text-align: left;
+        margin-top: 33px;
+        margin-left: 38px;
+        display: block;
+      }
+      .react {
+        width: 82%;
+        background-color: #fff6f5;
+        margin: 30px auto;
+        padding: 4px;
+        border-top-right-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        .reaction {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 8px 12px;
+        }
+        .score {
+          display: flex;
+          align-items: center;
+          padding-right: 10px;
+        }
+
+        .reacting {
+          font-size: 18px;
+          color: #d47f81;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .memory {
+        width: 82%;
+        background-color: #fffbf2;
+        margin: 30px auto;
+        padding: 4px;
+        border-top-right-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        .memories {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 8px 12px;
+        }
+        .score {
+          display: flex;
+          align-items: center;
+          padding-right: 10px;
+        }
+
+        .mem {
+          font-size: 18px;
+          color: #e9b54e;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .verbel {
+        width: 82%;
+        background-color: #f2fbfa;
+        margin: 30px auto;
+        padding: 4px;
+        border-top-right-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        .verblies {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 8px 12px;
+        }
+        .score {
+          display: flex;
+          align-items: center;
+          padding-right: 10px;
+        }
+
+        .veb {
+          font-size: 18px;
+          color: #51ad96;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .visusal {
+        width: 82%;
+        background-color: #f3f3fd;
+        margin: 30px auto;
+        padding: 4px;
+        border-top-right-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        .viuslies {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 8px 12px;
+        }
+        .score {
+          display: flex;
+          align-items: center;
+          padding-right: 10px;
+        }
+
+        .vis {
+          font-size: 18px;
+          color: #4851a3;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      .btn {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 82%;
+        border: none;
+        padding: 20px 24px;
+        color: white;
+        background-color: #303b59;
+        border-radius: 25px;
+      }
+      .btn:hover {
+        background-color: #4936f2;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: #{$mobile}) {
+  body {
+    display: flex;
+    justify-content: center;
+
+    .flex {
+      flex-direction: column;
+      width: 100%;
+
+      .left-side,
+      .right-side {
+        width: 100%;
+        height: auto;
+        h1 {
+          font-size: 18px;
+        }
+        p {
+          color: #cbbcff;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+      .btn-container {
+        margin-top: 0;
+        .btn {
+          font-size: 18px;
+          width: 90%;
+          border: none;
+          padding: 12px 24px;
+          margin-bottom: 15px;
+        }
+        .btn:hover {
+          background-color: #4936f2;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
